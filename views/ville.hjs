@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h5>Changer ville : </h5>
+    <form action="/ville" method="POST">
+      <h5>{{ villeLabel }}</h5>
+      <input name="nom_ville">
+    </form>
+    <br>
+    <label>Ville : </label>
+    <label>{{ villeName }}</label>
+    
+    
+    
+    
+  </body>
+</html>
