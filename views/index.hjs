@@ -6,10 +6,10 @@
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>{{ title }}</p>
+    
     <form action="/ville" method="GET">
-    	<label>{{ villeLabel }}</label>
-    	<input name="nom_ville">
+    	<label>Ville:</label>
+    	<input name="nom_ville" placeholder="Saisir la ville">
     <button type="submit" formmethod="post">Valider</button>
     </form>
     

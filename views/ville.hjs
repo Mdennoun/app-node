@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h5>Changer ville : </h5>
-    <form action="/ville" method="POST">
-      <h5>{{ villeLabel }}</h5>
-      <input name="nom_ville">
-    </form>
+   <div>
+    <h1>{{ villeName }}</h1>
     <br>
-    <label>Ville : </label>
-    <label>{{ villeName }}</label>
+    <label>Lattitude : </label>
+    <label>{{ lattValue }}</label>
+    <br>
+    <label>Longitude : </label>
+    <label>{{ longValue }}</label>
+    </div>
+    <br /><br /><br /><br />
+      <div>
+        <iframe id="mapframe" src="https://maps.google.com/maps?q={{ lattValue }},{{ longValue }}+&hl=es;z=14&amp;output=embed" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+      </div>        
     
     
     
