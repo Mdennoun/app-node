@@ -17,3 +17,4 @@ $DEBUG="node-app:server" npm start
 ```
 
 Le serveur est a l'ecoute on peut l'interoger sur : http://localhost:3000
+Url Heroku for testing : https://md-nodeapp.herokuapp.com/
