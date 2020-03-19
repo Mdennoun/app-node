@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>{{ title }}</h1>
-    
+    <label>Ou voulez vous allez ? </label>
     <form action="/ville" method="GET">
     	<label>Ville:</label>
     	<input name="nom_ville" placeholder="Saisir la ville">

@@ -57,6 +57,11 @@ h1 {
   width: 100%;
   color: #e0e0e0;
 }
+h2 {
+  text-align: center;
+  width: 100%;
+  color: #e0e0e0;
+}
 form {
   margin-top: 18%;
   text-align: center;

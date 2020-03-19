@@ -20,13 +20,16 @@ router.get('/ville', function(req, res, next) {
 router.post('/ville', function(req, res, next) {
 
   
-	var nom_ville = req.body.nom_ville;
+  var nom_ville = req.body.nom_ville;
+  nom_ville = nom_ville.toString("utf8");
+  console.log(nom_ville)
 	var urlHttps = 'https://geocode.xyz/' + nom_ville + '?json=1&auth=129969521496761168735x1973';
  
 	console.log(urlHttps);
 	https.get(urlHttps, (resp) => {
 
-		let data = '';
+    let data = '';
+    
 		resp.on('data', (d) => {
 			data += d;
 		});
