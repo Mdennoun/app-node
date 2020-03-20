@@ -5,7 +5,7 @@
   </head>
   <body>
    <div>
-    <h1>{{ villeName.toString("utf8"); }}</h1>
+    <h1>{{ villeName }}</h1>
     <br>
     <label>Lattitude : </label>
     <label>{{ lattValue }}</label>
