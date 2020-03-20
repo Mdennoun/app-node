@@ -53,3 +53,15 @@ try{
 console.log(result.data.toString().includes("Paris"));
 
   });
+
+  test('Erreur page display', async t => {
+    const result = await axios.post('https://md-nodeapp.herokuapp.com/ville', {nom_ville:"existepas"});
+    try{
+    
+        var html = result.data.toString('utf8');
+        t.regex(html, /Erreur/);
+      }catch(err) {
+          console.log(err)
+      }
+    
+      });
